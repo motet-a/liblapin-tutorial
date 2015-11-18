@@ -6,11 +6,13 @@
 liblapin
 ====================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
 
+   intro
+   install
+   window
+   extend
 
 Table des matières
 ==================
