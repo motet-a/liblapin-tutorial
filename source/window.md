@@ -49,6 +49,8 @@ int					main()
 }
 ```
 
+*[Voir le fichier](https://github.com/motet-a/liblapin-tutorial/blob/master/examples/window/bunny_start.c)*
+
 Cet exemple ouvre une fenêtre nommée « Ma fenêtre » pendant 2 secondes.
 
 ## Ouvrir une fenêtre avec un style ##
