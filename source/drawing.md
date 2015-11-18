@@ -21,6 +21,22 @@ La macro `ALPHA(a, rgb)` permet de convertir une couleur `rgb` au format
 RGB vers le format RGBA, dont la nouvelle composante alpha sera donnée
 par `a`.
 
+Les macros suivantes sont également disponibles :
+
+```
+| Nom           | Description   |
+|---------------|---------------|
+| BLACK         | Noir          |
+| BLUE          | Bleu          |
+| GREEN         | Vert          |
+| PINK          | Rose          |
+| PURPLE        | Violet        |
+| RED           | Rouge         |
+| TEAL          | ?             |
+| WHITE         | Blanc         |
+| YELLOW        | Jaune         |
+```
+
 Noter que la liblapin ne pourra pas être utilisée sur n’importe quelle
 architecture, et qu’une bonne compréhension de l’*endianness* est nécéssaire
 pour se faire une bonne idée du fonctionnement de la gestion des couleurs.
