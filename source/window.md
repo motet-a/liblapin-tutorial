@@ -88,7 +88,17 @@ Ces membres sont accessibles en lecture seule, les modifier ne
 permettera pas de redimensionner la fenêtre.
 
 Curieusement, ces membres contiennent toujours la taille de la
-fenêtre lors de sa création, et ne sont pas mis à jour lors de
-son redimensionnement.
+fenêtre lors de sa création, et ne sont pas mis à jours lors de
+son redimensionnement :
 
-*TODO: Rajouter un exemple*
+```c
+static void			print_size(t_bunny_window *window)
+{
+  t_bunny_buffer	*buffer;
+
+  buffer = &window->buffer;
+  printf("Window size: %dx%d\n", buffer->width, buffer->height);
+}
+```
+
+*[Voir le fichier](https://github.com/motet-a/liblapin-tutorial/blob/master/examples/window/size.c)*
