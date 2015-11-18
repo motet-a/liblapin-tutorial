@@ -12,6 +12,7 @@ liblapin
    intro
    install
    window
+   drawing
    extend
 
 Table des matières

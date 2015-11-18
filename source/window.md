@@ -53,7 +53,7 @@ int					main()
 
 Cet exemple ouvre une fenêtre nommée « Ma fenêtre » pendant 2 secondes.
 
-## Ouvrir une fenêtre avec un style ##
+## Ouvrir une fenêtre avec plus de paramètres ##
 
 ```c
 t_bunny_window	*bunny_start_style(unsigned int			width,
@@ -64,5 +64,25 @@ t_bunny_window	*bunny_start_style(unsigned int			width,
 
 **Avertissement** : Cette fonction n’est pas décrite dans la
 documentation officielle.
+
+*TODO: Rajouter un exemple*
+
+## Buffer ##
+
+Étant donné que la fenêtre peut être redimensionnée par l’utilisateur,
+sa taille à un moment donné lors de l’exécution du programme peut être
+différente de la taille passée en paramètre à `bunny_start()`.
+
+La structure `t_bunny_window` représentant la fenêtre contient
+un membre `buffer`, de type `t_bunny_buffer`.
+
+### Dimensions ###
+
+Le buffer d’une fenêtre contient :
+  - un membre `width` représentant la largeur interne de la fenêtre ;
+  - un membre `height` représentant la hauteur.
+
+Ces membres sont accessibles en lecture seule, les modifier ne
+permettera pas de redimensionner la fenêtre.
 
 *TODO: Rajouter un exemple*
