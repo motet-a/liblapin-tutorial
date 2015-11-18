@@ -8,10 +8,10 @@ La liblapin ne gère qu’une seule fenêtre.
 ### Méthode simple ###
 
 ```
-t_bunny_window			*bunny_start(unsigned int			width,
-									 unsigned int			height,
-									 bool					fullscreen,
-									 const char				*name);
+t_bunny_window	*bunny_start(unsigned int	width,
+							 unsigned int	height,
+							 bool			fullscreen,
+							 const char		*name);
 ```
 
 La fonction `bunny_start()` ouvre une fenêtre dont le nom est spécifié par
@@ -28,13 +28,15 @@ l’utilisateur grâce aux évenements.
 ### Méthode avancée ###
 
 ```
-t_bunny_window			*bunny_start_style(unsigned int			width,
-										   unsigned int			height,
-										   t_bunny_window_style	winstyle,
-										   const char			*name);
+t_bunny_window	*bunny_start_style(unsigned int			width,
+								   unsigned int			height,
+								   t_bunny_window_style	winstyle,
+								   const char			*name);
 ```
 
 **Avertissement** : Cette fonction n’est pas décrite dans la
 documentation officielle.
+
+*TODO: Rajouter un exemple*
 
 ## Fermer la fenêtre ##
