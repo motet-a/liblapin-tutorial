@@ -11,6 +11,7 @@ liblapin
 
    intro
    install
+   build
    window
    drawing
    extend
