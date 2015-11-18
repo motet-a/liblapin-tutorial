@@ -1,12 +1,9 @@
-# liblapin-doc
+# [liblapin-tutorial](https://liblapin.readthedocs.org/) #
 
-An alternative documentation for liblapin
+An alternative tutorial for liblapin
 
-## Documentation
-* link : https://liblapin.readthedocs.org/
+## liblapin ##
 
-## Library Lapin
+Library version: v1.5
 
-Lib version : v1.5
-
-Lib auteur : Jason Brillante
+Library author: Jason Brillante
