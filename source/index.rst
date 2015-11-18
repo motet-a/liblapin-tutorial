@@ -21,4 +21,3 @@ Table des matières
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

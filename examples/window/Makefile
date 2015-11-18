@@ -3,6 +3,8 @@ CC		= cc
 
 RM		= rm -f
 
+NAMES		= bunny_start size
+
 CFLAGS		= -Wall
 
 LDFLAGS		= -llapin \
@@ -14,12 +16,15 @@ LDFLAGS		= -llapin \
 		  -ljpeg \
 		  -lm
 
-all: bunny_start
+all: $(NAMES)
 
 bunny_start: bunny_start.c
+	$(CC) $^ -o $@ $(CFLAGS) $(LDFLAGS)
+
+size: size.c
 	$(CC) $^ -o $@ $(CFLAGS) $(LDFLAGS)
 
 clean:
 
 fclean: clean
-	$(RM) bunny_start
+	$(RM) $(NAMES)

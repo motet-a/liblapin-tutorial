@@ -1,4 +1,3 @@
-
 #include <unistd.h>
 #include "lapin.h"
 
@@ -6,7 +5,11 @@ int			main()
 {
   t_bunny_window	*window;
 
-  window = bunny_start(800, 600, false, "Ma fenêtre");
+  window = bunny_start(800, 600, 0, "Ma fenêtre");
+  if (!window)
+    {
+      return (1);
+    }
   sleep(2);
   bunny_stop(window);
   return (0);
