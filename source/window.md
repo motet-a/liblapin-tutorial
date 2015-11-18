@@ -5,7 +5,7 @@ La liblapin ne gère qu’une seule fenêtre.
 
 ## Ouvrir la fenêtre ##
 
-```
+```c
 t_bunny_window	*bunny_start(unsigned int	width,
 							 unsigned int	height,
 							 bool			fullscreen,
@@ -24,7 +24,7 @@ l’utilisateur grâce aux évenements.
 
 ## Fermer la fenêtre ##
 
-```
+```c
 void	bunny_stop(t_bunny_window	*window);
 ```
 
@@ -34,7 +34,7 @@ avant la fin du programme pour libérer les ressources allouées par
 
 ## Exemple ##
 
-```
+```c
 #include <unistd.h>
 #include "lapin.h"
 
@@ -55,7 +55,7 @@ Cet exemple ouvre une fenêtre nommée « Ma fenêtre » pendant 2 secondes.
 
 ## Ouvrir une fenêtre avec un style ##
 
-```
+```c
 t_bunny_window	*bunny_start_style(unsigned int			width,
 								   unsigned int			height,
 								   t_bunny_window_style	winstyle,
