@@ -5,7 +5,7 @@
 
 La [version 1.5][liblapin] de la liblapin est disponible sur l’intranet d’Epitech.
 
-## Installation avec fake_install.sh ##
+## Installation avec fake_install.sh (reccomandé) ##
 
 Si vous utilisez le script `fake_install.sh`, vous devrez normalement
 ajouter les lignes suivantes à la fin du script
@@ -23,12 +23,6 @@ Si vous utilisez le script `real_install.sh`, vous devez connaître
 le mot de pase root.
 Il faudra exécuter `real_install.sh` en tant que root afin d'avoir
 les droits d'écriture.
-Vous devrez normalement ajouter cette ligne à la fin du script
-d’initialisation de votre shell (`.bashrc`, `.zshrc` ou autre) :
-
-```sh
-export LD_LIBRARY_PATH="/usr/local/lib/"
-```
 
 ## Sources ##
 

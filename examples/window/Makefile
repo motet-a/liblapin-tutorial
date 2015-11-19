@@ -7,7 +7,10 @@ NAMES		= bunny_start size multiple_windows
 
 CFLAGS		= -Wall
 
-LDFLAGS		= -L$(LD_LIBRARY_PATH) \
+LIBLAPIN_PATH	= -L/home/${USER}/.froot/lib/ -llapin \
+		  -L/usr/local/lib
+
+LDFLAGS		= $(LIBLAPIN_PATH) \
 		  -lsfml-audio \
 		  -lsfml-graphics \
 		  -lsfml-window \
