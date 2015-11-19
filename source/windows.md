@@ -35,7 +35,7 @@ allouées par `bunny_start()`.
 
 ```c
 #include <unistd.h>
-#include "lapin.h"
+#include <lapin.h>
 
 int					main()
 {
