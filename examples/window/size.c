@@ -1,6 +1,6 @@
 #include <unistd.h>
 #include <stdio.h>
-#include "lapin.h"
+#include <lapin.h>
 
 static void		print_size(t_bunny_window *window)
 {

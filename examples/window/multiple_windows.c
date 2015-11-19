@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include "lapin.h"
+#include <lapin.h>
 
 int			main()
 {
