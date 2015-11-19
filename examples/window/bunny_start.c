@@ -10,6 +10,7 @@ int			main()
     {
       return (1);
     }
+  bunny_display(window);
   sleep(2);
   bunny_stop(window);
   return (0);
