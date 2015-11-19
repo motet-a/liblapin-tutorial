@@ -57,7 +57,7 @@ Les macros suivantes sont également disponibles :
 </table>
 
 Noter que la liblapin ne pourra pas être utilisée sur n’importe quelle
-architecture, et qu’une bonne compréhension de l’*endianness* est nécéssaire
+architecture, et qu’une bonne compréhension de l’*[endianness][]* est nécéssaire
 pour se faire une bonne idée du fonctionnement de la gestion des couleurs.
 
 ## Généralités ##
@@ -108,3 +108,4 @@ pointeur vers un entier de 32 bits, représentant la liste des pixels.
 
 
 [format RGBA]: https://en.wikipedia.org/wiki/RGBA_color_space
+[endianness]: https://fr.wikipedia.org/wiki/Endianness
