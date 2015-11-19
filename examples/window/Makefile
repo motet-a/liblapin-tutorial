@@ -3,7 +3,7 @@ CC		= cc
 
 RM		= rm -f
 
-NAMES		= bunny_start size
+NAMES		= bunny_start size multiple_windows
 
 CFLAGS		= -Wall
 
@@ -22,6 +22,9 @@ bunny_start: bunny_start.c
 	$(CC) $^ -o $@ $(CFLAGS) $(LDFLAGS)
 
 size: size.c
+	$(CC) $^ -o $@ $(CFLAGS) $(LDFLAGS)
+
+multiple_windows: multiple_windows.c
 	$(CC) $^ -o $@ $(CFLAGS) $(LDFLAGS)
 
 clean:
