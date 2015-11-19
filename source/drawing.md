@@ -23,19 +23,38 @@ par `a`.
 
 Les macros suivantes sont également disponibles :
 
-```
-| Nom           | Description   |
-|---------------|---------------|
-| BLACK         | Noir          |
-| BLUE          | Bleu          |
-| GREEN         | Vert          |
-| PINK          | Rose          |
-| PURPLE        | Violet        |
-| RED           | Rouge         |
-| TEAL          | ?             |
-| WHITE         | Blanc         |
-| YELLOW        | Jaune         |
-```
+<table class="docutils">
+  <tr>
+    <th>Nom</th><th>Description</th>
+  </tr>
+  <tr>
+    <td>BLACK</td><td>Noir</td>
+  </tr>
+  <tr>
+    <td>BLUE</td><td>Bleu</td>
+  </tr>
+  <tr>
+    <td>GREEN</td><td>Vert</td>
+  </tr>
+  <tr>
+	<td>PINK</td><td>Rose</td>
+  </tr>
+  <tr>
+	<td>PURPLE</td><td>Violet</td>
+  </tr>
+  <tr>
+	<td>RED</td><td>Rouge</td>
+  </tr>
+  <tr>
+	<td>TEAL</td><td>Cyan</td>
+  </tr>
+  <tr>
+	<td>WHITE</td><td>Blanc</td>
+  </tr>
+  <tr>
+	<td>YELLOW</td><td>Jaune</td>
+  <tr>
+</table>
 
 Noter que la liblapin ne pourra pas être utilisée sur n’importe quelle
 architecture, et qu’une bonne compréhension de l’*endianness* est nécéssaire
