@@ -19,7 +19,9 @@ export CPLUS_INCLUDE_PATH="/home/${USER}/.froot/include/"
 
 ## Installation avec real_install.sh ##
 
-TODO
+Si vous utilisez le script `real_install.sh`, vous devrez être root.
+Vous n'aurez pas à ajouter de ligne dans votre script d'initialisation.
+Il faudra exécuter `real_install.sh` en sudo afin d'avoir les droits d'écriture.
 
 ## Sources ##
 
