@@ -31,6 +31,14 @@ Après un appel à `bunny_start()`, `bunny_stop()` doit toujours
 être appellée avant la fin du programme pour libérer les ressources
 allouées par `bunny_start()`.
 
+## Afficher une fenêtre ##
+
+```c
+void	bunny_display(const t_bunny_window	*window);
+```
+
+TODO
+
 ## Exemples ##
 
 ```c
@@ -46,6 +54,7 @@ int					main()
     {
       return (1);
     }
+  bunny_display(window);
   sleep(2);
   bunny_stop(window);
   return (0);
