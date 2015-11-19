@@ -52,11 +52,12 @@ int					main()
 }
 ```
 
-*[Voir le fichier](https://github.com/motet-a/liblapin-tutorial/blob/master/examples/window/bunny_start.c)*
+*[Voir le fichier][bunny_start.c]*
 
 Cet exemple ouvre une fenêtre nommée « Ma fenêtre » pendant 2 secondes.
 
-Il est possible d’ouvrir plusieurs fenêtre, comme l’illustre [cet exemple](https://github.com/motet-a/liblapin-tutorial/blob/master/examples/window/multiple_window.c).
+Il est possible d’ouvrir plusieurs fenêtres, comme l’illustre
+[cet exemple][multiple_windows.c].
 
 ## Ouvrir une fenêtre avec plus de paramètres ##
 
@@ -102,4 +103,8 @@ static void			print_size(t_bunny_window *window)
 }
 ```
 
-*[Voir le fichier](https://github.com/motet-a/liblapin-tutorial/blob/master/examples/window/size.c)*
+*[Voir le fichier][size.c]*
+
+[bunny_start.c]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/window/bunny_start.c
+[size.c]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/window/size.c
+[multiple_windows.c]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/window/multiple_windows.c
