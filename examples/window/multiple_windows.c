@@ -11,12 +11,15 @@ int			main()
     {
       return (1);
     }
+  bunny_display(window_a);
   sleep(2);
   window_b = bunny_start(600, 400, 0, "Ma seconde fenêtre");
   if (!window_b)
     {
+      bunny_stop(window_a);
       return (1);
     }
+  bunny_display(window_b);
   sleep(2);
   bunny_stop(window_a);
   bunny_stop(window_b);
