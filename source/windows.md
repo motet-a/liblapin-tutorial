@@ -1,9 +1,7 @@
 
-# Fenêtre #
+# Fenêtres #
 
-La liblapin ne gère qu’une seule fenêtre.
-
-## Ouvrir la fenêtre ##
+## Ouvrir une fenêtre ##
 
 ```c
 t_bunny_window	*bunny_start(unsigned int	width,
@@ -12,7 +10,7 @@ t_bunny_window	*bunny_start(unsigned int	width,
 							 const char		*name);
 ```
 
-La fonction `bunny_start()` ouvre la fenêtre dont le nom est spécifié par
+La fonction `bunny_start()` ouvre une fenêtre dont le nom est spécifié par
 `name`. `width` et `height` indiquent la taille de la fenêtre, `fullscreen`
 doit être égal à `0` pour que la fenêtre soit en plein écran.
 
@@ -22,17 +20,18 @@ Noter qu’il n’y a aucun moyen de redimensionner ou de renommer
 une fenêtre une fois qu’elle à été créée.
 Seul l’utilisateur peut changer sa taille manuellement.
 
-## Fermer la fenêtre ##
+## Fermer une fenêtre ##
 
 ```c
 void	bunny_stop(t_bunny_window	*window);
 ```
 
-La fonction `bunny_stop()` ferme la fenêtre. Elle doit toujours être appellée
-avant la fin du programme pour libérer les ressources allouées par
-`bunny_start()`.
+La fonction `bunny_stop()` ferme une fenêtre.
+Après un appel à `bunny_start()`, `bunny_stop()` doit toujours
+être appellée avant la fin du programme pour libérer les ressources
+allouées par `bunny_start()`.
 
-## Exemple ##
+## Exemples ##
 
 ```c
 #include <unistd.h>
@@ -57,6 +56,8 @@ int					main()
 
 Cet exemple ouvre une fenêtre nommée « Ma fenêtre » pendant 2 secondes.
 
+Il est possible d’ouvrir plusieurs fenêtre, comme l’illustre [cet exemple](https://github.com/motet-a/liblapin-tutorial/blob/master/examples/window/multiple_window.c).
+
 ## Ouvrir une fenêtre avec plus de paramètres ##
 
 ```c
@@ -75,7 +76,7 @@ Cette fonction retourne soit la nouvelle fenêtre, soit `NULL` en cas d’erreur
 
 ## Buffer ##
 
-La structure `t_bunny_window` représentant la fenêtre contient
+La structure `t_bunny_window` représentant une fenêtre contient
 un membre `buffer`, de type `t_bunny_buffer`.
 
 ### Dimensions ###

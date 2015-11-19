@@ -12,7 +12,7 @@ liblapin
    intro
    install
    build
-   window
+   windows
    drawing
    extend
 
