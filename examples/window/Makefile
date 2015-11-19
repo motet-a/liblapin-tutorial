@@ -32,3 +32,5 @@ clean:
 
 fclean: clean
 	$(RM) $(NAMES)
+
+re: fclean all
