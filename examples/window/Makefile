@@ -7,14 +7,15 @@ NAMES		= bunny_start size multiple_windows
 
 CFLAGS		= -Wall
 
-LDFLAGS		= -llapin \
+LDFLAGS		= -L$(LD_LIBRARY_PATH) \
 		  -lsfml-audio \
 		  -lsfml-graphics \
 		  -lsfml-window \
 		  -lsfml-system \
 		  -lstdc++ -ldl \
 		  -ljpeg \
-		  -lm
+		  -lm \
+		  -llapin
 
 all: $(NAMES)
 
