@@ -19,9 +19,16 @@ export CPLUS_INCLUDE_PATH="/home/${USER}/.froot/include/"
 
 ## Installation avec real_install.sh ##
 
-Si vous utilisez le script `real_install.sh`, vous devrez être root.
-Vous n'aurez pas à ajouter de ligne dans votre script d'initialisation.
-Il faudra exécuter `real_install.sh` en sudo afin d'avoir les droits d'écriture.
+Si vous utilisez le script `real_install.sh`, vous devez connaître
+le mot de pase root.
+Il faudra exécuter `real_install.sh` en tant que root afin d'avoir
+les droits d'écriture.
+Vous devrez normalement ajouter cette ligne à la fin du script
+d’initialisation de votre shell (`.bashrc`, `.zshrc` ou autre) :
+
+```sh
+export LD_LIBRARY_PATH="/usr/local/lib/"
+```
 
 ## Sources ##
 
