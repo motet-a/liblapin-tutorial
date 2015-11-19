@@ -82,7 +82,7 @@ Le membre `pixels` contient le tableau de pixels interne,
 et le membre `clipable` contient diverses informations dont la taille du
 `t_bunny_pixelarray`.
 
-## Créer un tableau de pixels ##
+## Créer un t_bunny_pixelarray ##
 
 ```c
 t_bunny_pixelarray	*bunny_new_pixelarray(unsigned int	width,
@@ -92,7 +92,7 @@ t_bunny_pixelarray	*bunny_new_pixelarray(unsigned int	width,
 La fonction `bunny_new_pixelarray()` crée un nouveau `t_bunny_pixelarray`
 de taille donnée.
 
-## Détruire un tableau de pixels ##
+## Détruire un t_bunny_pixelarray ##
 
 ```c
 void		bunny_delete_clipable(t_bunny_clipable	*clipable);
@@ -101,11 +101,38 @@ void		bunny_delete_clipable(t_bunny_clipable	*clipable);
 Cette fonction peut servir à détruire un `t_bunny_pixelarray` dont le clipable
 lui est passé en paramètre.
 
-## Dessiner dans un tableau de pixels ##
+## Dessiner sur un t_bunny_pixelarray ##
 
 Le membre `pixels` d’un `t_bunny_pixelarray` peut être converti vers un
 pointeur vers un entier de 32 bits, représentant la liste des pixels.
 
+## Transférer un t_bunny_pixelarray vers une fenêtre ##
+
+```c
+void	bunny_blit(t_bunny_buffer			*buffer,
+				   const t_bunny_clipable	*picture,
+				   const t_bunny_position	*position);
+```
+
+Cette fonction peut servir à transférer un `t_bunny_pixelarray`
+vers une fenêtre.
+Il suffit de l’appeller avec le buffer de la fenêtre et le
+clipable du `t_bunny_pixelarray` :
+
+```c
+void	blit_to_window(t_bunny_window *window,
+					   const t_bunny_pixelarray *pixelarray)
+{
+  t_bunny_position	*position;
+
+  position->x = 0;
+  position->y = 0;
+  bunny_blit(&window->buffer, &pixelarray->clipable, &position);
+}
+
+```
+
+TODO: Tester
 
 [format RGBA]: https://en.wikipedia.org/wiki/RGBA_color_space
 [endianness]: https://fr.wikipedia.org/wiki/Endianness
