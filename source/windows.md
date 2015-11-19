@@ -31,13 +31,15 @@ Après un appel à `bunny_start()`, `bunny_stop()` doit toujours
 être appellée avant la fin du programme pour libérer les ressources
 allouées par `bunny_start()`.
 
-## Afficher une fenêtre ##
+## Afficher le contenu d’une fenêtre ##
 
 ```c
 void	bunny_display(const t_bunny_window	*window);
 ```
 
-TODO
+Cette fonction affiche le contenu d’une fenêtre à l’écran.
+Il est nécéssaire de l’appeller après `bunny_start()` pour être sûr
+que la fenêtre soit visible.
 
 ## Exemples ##
 
