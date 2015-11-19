@@ -12,7 +12,7 @@ t_bunny_window	*bunny_start(unsigned int	width,
 
 La fonction `bunny_start()` ouvre une fenêtre dont le nom est spécifié par
 `name`. `width` et `height` indiquent la taille de la fenêtre, `fullscreen`
-doit être égal à `1` pour que la fenêtre soit en plein écran.
+doit être égal à `0` pour que la fenêtre ne soit pas en plein écran.
 
 Cette fonction retourne soit la nouvelle fenêtre, soit `NULL` en cas d’erreur.
 
