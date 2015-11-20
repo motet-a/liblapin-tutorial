@@ -1,7 +1,7 @@
 
 # Introduction #
 
-Ce tutoriel non-officiel de la **liblapin** est en cours d’écriture.
+Ce tutoriel non-officiel sur la **liblapin** est en cours d’écriture.
 Toute collaboration est la bienvenue - voir la page [Améliorer](extend.html).
 
 Le manuel « officiel » de la liblapin est [disponible ici][manuel]. Il est également possible de [le consulter en plein écran][manuel plein ecran].
