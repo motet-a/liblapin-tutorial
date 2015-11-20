@@ -84,7 +84,11 @@ documentation officielle.
 
 Cette fonction retourne soit la nouvelle fenêtre, soit `NULL` en cas d’erreur.
 
-*TODO: Rajouter un exemple*
+Pour les utilisateurs du gestionnaire de fenêtres i3, vous aurez remarqué
+que les fenêtres ne sont pas affichées en mode flottant directement.
+Pour cela, il faut que la valeur de `winstyle` soit `TITLEBAR | CLOSE_BUTTON`.
+
+*[Voir le fichier][bunny_start_style.c]*
 
 ## Buffer ##
 
@@ -117,5 +121,6 @@ static void			print_size(t_bunny_window *window)
 *[Voir le fichier][size.c]*
 
 [bunny_start.c]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/window/bunny_start.c
+[bunny_start_style.c]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/window/bunny_start_style.c
 [size.c]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/window/size.c
 [multiple_windows.c]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/window/multiple_windows.c

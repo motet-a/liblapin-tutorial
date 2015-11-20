@@ -3,7 +3,7 @@ CC		= cc
 
 RM		= rm -f
 
-NAMES		= bunny_start size multiple_windows
+NAMES		= bunny_start bunny_start_style size multiple_windows
 
 CFLAGS		= -Wall
 
@@ -23,6 +23,9 @@ LDFLAGS		= $(LIBLAPIN_PATH) \
 all: $(NAMES)
 
 bunny_start: bunny_start.c
+	$(CC) $^ -o $@ $(CFLAGS) $(LDFLAGS)
+
+bunny_start_style: bunny_start_style.c
 	$(CC) $^ -o $@ $(CFLAGS) $(LDFLAGS)
 
 size: size.c
