@@ -5,7 +5,7 @@
 
 La [version 1.5][liblapin] de la liblapin est disponible sur l’intranet d’Epitech.
 
-## Installation avec fake_install.sh (reccomandé) ##
+## Installation avec fake_install.sh (recommandé) ##
 
 Si vous utilisez le script `fake_install.sh`, vous devrez normalement
 ajouter les lignes suivantes à la fin du script
