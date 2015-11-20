@@ -84,6 +84,10 @@ documentation officielle.
 
 Cette fonction retourne soit la nouvelle fenêtre, soit `NULL` en cas d’erreur.
 
+Pour les utilisateurs du gestionnaire de fenêtres i3, vous aurez remarqué
+que les fenêtres ne sont pas affichées en mode flottant directement.
+Pour cela, il faut que la valeur de `winstyle` soit `TITLEBAR | CLOSE_BUTTON`.
+
 *TODO: Rajouter un exemple*
 
 ## Buffer ##
