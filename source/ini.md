@@ -82,11 +82,9 @@ if (ini == NULL)
 else
   {
     if (bunny_ini_get_field(ini, "forme1", "width", 0) != NULL)
-	{
-	  width = my_get_number(bunny_ini_get_field(ini, "forme1", "width", 0));
-	  }
-	  else
-	my_putstr("Le champs width dans le scope forme1 est introuvable :/\n");
+      width = my_get_number(bunny_ini_get_field(ini, "forme1", "width", 0));
+    else
+      my_putstr("Le champs width dans le scope forme1 est introuvable :/\n");
   }
 bunny_delete_ini(ini);
 ```
