@@ -14,6 +14,7 @@ liblapin
    build
    windows
    drawing
+   ini
    extend
 
 Table des matières
