@@ -109,7 +109,7 @@ Cela signifie que chaque case du tableau représente un pixel, respectivement da
 
 Ainsi, la case 0 correspond au pixel en haut à gauche de l'ecran, la case 1 au pixel juste à sa droite, et ainsi de suite.
 
-La valeur de la case, un nombre non signé de 32bits, est la couleur : 0 pour noir, 0xFFFFFFFF pour blanc (En héxa). (Voir la section couleur (En cours d'ecriture...) pour plus d'informations)
+La valeur de la case, un nombre non signé de 32bits, est la couleur : 0 pour noir, 0xFFFFFFFF pour blanc.
 
 ## Transférer un t_bunny_pixelarray vers une fenêtre ##
 
