@@ -14,6 +14,7 @@ liblapin
    build
    windows
    drawing
+   refresh
    ini
    extend
 
