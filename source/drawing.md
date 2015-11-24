@@ -103,8 +103,13 @@ lui est passé en paramètre.
 
 ## Dessiner sur un t_bunny_pixelarray ##
 
-Le membre `pixels` d’un `t_bunny_pixelarray` peut être converti vers un
-pointeur vers un entier de 32 bits, représentant la liste des pixels.
+Le membre `pixels` d’un `t_bunny_pixelarray` peut être converti en un tableau d'entiers non signés de 32 bits, représentant la liste des pixels.
+
+Cela signifie que chaque case du tableau représente un pixel, respectivement dans l'ordre de gauche à droite.
+
+Ainsi, la case 0 correspond au pixel en haut à gauche de l'ecran, la case 1 au pixel juste à sa droite, et ainsi de suite.
+
+La valeur de la case, un nombre non signé de 32bits, est la couleur : 0 pour noir, 0xFFFFFFFF pour blanc (En héxa). (Voir la section couleur (En cours d'ecriture...) pour plus d'informations)
 
 ## Transférer un t_bunny_pixelarray vers une fenêtre ##
 
