@@ -40,11 +40,11 @@ lignes, comme dans l’exemple ci-dessus.
 
 ## Lire un fichier INI ##
 
-Tout d'abord, il faut charger le fichier INI avec la fonction
+Tout d’abord, il faut charger le fichier INI avec la fonction
 `bunny_load_ini()`.
 Elle prend en paramètre l’adresse du fichier INI et retourne un pointeur
 sur un nouveau `t_bunny_ini`.
-N'oubliez pas de supprimer le `t_bunny_ini` avec la fonction
+N’oubliez pas de supprimer le `t_bunny_ini` avec la fonction
 `bunny_delete_ini()`.
 
 Exemple :

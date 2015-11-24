@@ -21,8 +21,8 @@ export CPLUS_INCLUDE_PATH="/home/${USER}/.froot/include/"
 
 Si vous utilisez le script `real_install.sh`, vous devez connaître
 le mot de pase root.
-Il faudra exécuter `real_install.sh` en tant que root afin d'avoir
-les droits d'écriture.
+Il faudra exécuter `real_install.sh` en tant que root afin d’avoir
+les droits d’écriture.
 
 ## Sources ##
 

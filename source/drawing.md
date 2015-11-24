@@ -104,26 +104,26 @@ lui est passé en paramètre.
 ## Dessiner sur un t_bunny_pixelarray ##
 
 Le membre `pixels` d’un `t_bunny_pixelarray` peut être converti en un
-tableau d'entiers non signés de 32 bits, représentant la liste des pixels.
+tableau d’entiers non signés de 32 bits, représentant la liste des pixels.
 
 Cela signifie que chaque case du tableau représente un pixel,
-respectivement dans l'ordre de gauche à droite.
+respectivement dans l’ordre de gauche à droite.
 
 Si un `t_bunny_pixelarray` fait 3 pixels de haut sur 4 pixels de large,
 ses 12 pixels seront disposés ainsi :
 
 ```
-  <- largeur ->
+<- largeur ->
 
-  0   1   2   3  ^
-                 |
-  4   5   6   7  hauteur
-                 |
-  8   9  10  11  v
+0   1   2   3   ^
+                |
+4   5   6   7  hauteur
+                |
+8   9  10  11   v
 ```
 
 Ainsi, la case 0 du tableau correspond au pixel en haut
-à gauche de l'écran, la case 1 au pixel juste à sa droite,
+à gauche de l’écran, la case 1 au pixel juste à sa droite,
 et ainsi de suite.
 
 ## Transférer un t_bunny_pixelarray vers une fenêtre ##
