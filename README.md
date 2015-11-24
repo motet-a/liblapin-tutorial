@@ -1,5 +1,7 @@
 # [liblapin-tutorial](https://liblapin.readthedocs.org/) #
 
+[![Documentation Status](http://readthedocs.org/projects/liblapin/badge/?version=latest)](http://liblapin.readthedocs.org/fr/latest/?badge=latest)
+
 An alternative tutorial for liblapin
 
 ## Dependencies ##
@@ -24,6 +26,6 @@ $ make examples
 
 ## liblapin ##
 
-Library version: v1.5
+Library version: v1.5.1
 
 Library author: Jason Brillante
