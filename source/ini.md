@@ -1,10 +1,9 @@
 
 # Gestion des fichiers INI #
 
-## Principe des fichiers INI ##
+## Format des fichiers INI ##
 
-Les fichiers INI sont composées de deux élments : les scopes, et les champs. Les scopes correspondent à des catégories, et continennt des champs. Les champs appartiennent donc à des scopes, et contiennent des données.
-
+Concernant le format INI, [voir l’article sur Wikipedia][wikipedia].
 
 ```
 [forme1]
@@ -30,7 +29,10 @@ data=6,5,3,2,3,4,
 0,0,0,0,0,0
 ```
 
-Dans le fichier ci-dessus, on voit un scope, forme1, qui contient les champs type, width, height et data ; et le scope forme2 qui contient les même champs.
+Dans le fichier ci-dessus, on voit deux sections :
+  - `forme1`, qui contient les champs `type`, `width`, `height`
+  et `data` ;
+  - `forme2`, qui contient les même champs.
 
 ## Lire un fichier INI ##
 
@@ -90,3 +92,5 @@ bunny_delete_ini(ini);
 ```
 
 Voila ! Bon courage pour la suite :)
+
+[wikipedia]: https://en.wikipedia.org/wiki/INI_file
