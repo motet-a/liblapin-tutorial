@@ -1,5 +1,5 @@
 
-# Gestion des fichiers INI #
+# Fichiers INI #
 
 ## Format des fichiers INI ##
 
@@ -95,33 +95,37 @@ En mettant en dernier paramètre le nombre 1, la chaîne de caractères
 correspondra alors à `"24"`, et `"36"` si le dernier paramètre
 est égal à 2.
 
-## Fil de fer ##
+## Exemple ##
 
-Pour en revenir au cas du fil de fer, il faut d'abord récupérer
-`width` et `height`, et incrémenter une variable temporaire de 0
-jusqu'à `width * height` (avec `width` et `height > 0`).
-Cette variable temporaire est le numéro de la data à récupérer.
+Prenons ce fichier INI contenant des informations sur un agriculteur :
 
-Exemple pour récupérer le champ `width` :
-
-```c
-t_bunny_ini	*ini;
-int			width;
-
-ini = bunny_load_file("test.ini");
-width = 0;
-if (ini == NULL)
-  my_putstr("Fichier introuvable\n");
-else
-  {
-    if (bunny_ini_get_field(ini, "forme1", "width", 0) != NULL)
-      width = my_get_number(bunny_ini_get_field(ini, "forme1", "width", 0));
-    else
-      my_putstr("Le champ `width` dans la section `forme1` est introuvable\n");
-  }
-bunny_delete_ini(ini);
+```
+[farmer]
+first_name=pierre-emmanuel
 ```
 
-Voilà ! Bon courage pour la suite :)
+[Voir le fichier][test.ini]
+
+Cette fonction permet de récupérer le prénom de l’agriculteur :
+
+```c
+static void	print_first_name(t_bunny_ini *ini)
+{
+  const char	*first_name;
+
+  first_name = bunny_ini_get_field(ini, "farmer", "first_name", 0);
+  if (!first_name)
+    {
+      printf("Le champ \"first_name\" dans la section"
+	     " \"farmer\" est introuvable\n");
+      return ;
+    }
+  printf("First name: %s\n", first_name);
+}
+```
+
+[Voir le fichier][ini.c]
 
 [wikipedia]: https://en.wikipedia.org/wiki/INI_file
+[ini.c]: https://github.com/motet-a/liblapin-tutorial/tree/master/examples/ini/ini.c
+[test.ini]: https://github.com/motet-a/liblapin-tutorial/tree/master/examples/ini/test.ini

@@ -6,11 +6,11 @@ static void	print_first_name(t_bunny_ini *ini)
 {
   const char	*first_name;
 
-  first_name = bunny_ini_get_field(ini, "player", "first_name", 0);
+  first_name = bunny_ini_get_field(ini, "farmer", "first_name", 0);
   if (!first_name)
     {
       printf("Le champ \"first_name\" dans la section"
-	     " \"player\" est introuvable\n");
+	     " \"farmer\" est introuvable\n");
       return ;
     }
   printf("First name: %s\n", first_name);
