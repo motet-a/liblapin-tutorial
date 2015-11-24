@@ -140,19 +140,19 @@ Il suffit de l’appeller avec le buffer de la fenêtre et le
 clipable du `t_bunny_pixelarray` :
 
 ```c
-void	blit_to_window(t_bunny_window *window,
-					   const t_bunny_pixelarray *pixelarray)
+void			blit_to_window(t_bunny_window *window,
+				       const t_bunny_pixelarray *pixelarray)
 {
-  t_bunny_position	*position;
+  t_bunny_position	position;
 
-  position->x = 0;
-  position->y = 0;
+  position.x = 0;
+  position.y = 0;
   bunny_blit(&window->buffer, &pixelarray->clipable, &position);
 }
-
 ```
 
-TODO: Tester
+[Voir le fichier][blit.c]
 
 [format RGBA]: https://en.wikipedia.org/wiki/RGBA_color_space
 [endianness]: https://fr.wikipedia.org/wiki/Endianness
+[blit.c]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/drawing/blit.c
