@@ -109,11 +109,22 @@ tableau d'entiers non signés de 32 bits, représentant la liste des pixels.
 Cela signifie que chaque case du tableau représente un pixel,
 respectivement dans l'ordre de gauche à droite.
 
-Ainsi, la case 0 correspond au pixel en haut à gauche de l'ecran, la
-case 1 au pixel juste à sa droite, et ainsi de suite.
+Si un `t_bunny_pixelarray` fait 3 pixels de haut sur 4 pixels de large,
+ses 12 pixels seront disposés ainsi :
 
-La valeur de la case, un nombre non signé de 32 bits, est la couleur :
-0 pour noir, 0xFFFFFFFF pour blanc.
+```
+  <- largeur ->
+
+  0   1   2   3  ^
+                 |
+  4   5   6   7  hauteur
+                 |
+  8   9  10  11  v
+```
+
+Ainsi, la case 0 du tableau correspond au pixel en haut
+à gauche de l'écran, la case 1 au pixel juste à sa droite,
+et ainsi de suite.
 
 ## Transférer un t_bunny_pixelarray vers une fenêtre ##
 
