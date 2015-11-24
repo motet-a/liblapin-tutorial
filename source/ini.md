@@ -54,9 +54,9 @@ t_bunny_ini	*ini;
 
 ini = bunny_load_file("test.ini");
 if (ini == NULL)
-    my_putstr("Fichier introuvable\n");
+  my_putstr("Fichier introuvable\n");
 else
-    my_putstr("Fichier chargé !\n");
+  my_putstr("Fichier chargé !\n");
 bunny_delete_ini(ini);
 ```
 
@@ -80,9 +80,9 @@ Elle prend quatre paramètres :
 
 Elle retourne soit une chaîne contenant la valeur, soit `NULL`.
 
-Attardons-nous un instant sur ce dernier paramètre : la fonction
-`bunny_ini_get_field()` gère automatiquement un champ qui contient
-plusieurs variables, spéraées par un espace :
+Le dernier paramètre de la fonction `bunny_ini_get_field()`
+prend son importance lorsque le champ est une liste de valeur.
+Exemple :
 
 ```
 [forme1]
@@ -95,12 +95,14 @@ En mettant en dernier paramètre le nombre 1, la chaîne de caractères
 correspondra alors à `"24"`, et `"36"` si le dernier paramètre
 est égal à 2.
 
+## Fil de fer ##
+
 Pour en revenir au cas du fil de fer, il faut d'abord récupérer
 `width` et `height`, et incrémenter une variable temporaire de 0
 jusqu'à `width * height` (avec `width` et `height > 0`).
 Cette variable temporaire est le numéro de la data à récupérer.
 
-Exemple pour récupérer la variable `width` :
+Exemple pour récupérer le champ `width` :
 
 ```c
 t_bunny_ini	*ini;
@@ -109,13 +111,13 @@ int			width;
 ini = bunny_load_file("test.ini");
 width = 0;
 if (ini == NULL)
-   my_putstr("Fichier introuvable\n");
+  my_putstr("Fichier introuvable\n");
 else
   {
     if (bunny_ini_get_field(ini, "forme1", "width", 0) != NULL)
       width = my_get_number(bunny_ini_get_field(ini, "forme1", "width", 0));
     else
-      my_putstr("Le champs width dans le scope forme1 est introuvable :\n");
+      my_putstr("Le champ `width` dans la section `forme1` est introuvable\n");
   }
 bunny_delete_ini(ini);
 ```
