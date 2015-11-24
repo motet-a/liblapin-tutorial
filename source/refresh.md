@@ -5,7 +5,7 @@ Il est très souvent nécéssaire de rafraîchir une fenêtre à
 une fréquence donnée.
 La liblapin permet de faire cela en rappellant automatiquement
 une de vos fonctions, qui sera chargée de rafraîchir votre
-feêtre.
+fenêtre.
 
 Vous devez procéder en trois étapes :
 
@@ -14,7 +14,7 @@ Vous devez procéder en trois étapes :
   - Indiquer à la liblapin votre fonction « rafraîchissante » -
   en lui passant un pointeur vers votre fonction ;
   - Indiquer à la liblapin votre fenêtre à rafraîchir et la
-  fréquence à laquelle elle sera rafraîchie.
+  fréquence de rafraîchissement.
 
 ## Signaler la fonction rafraîchissante ##
 
@@ -29,3 +29,7 @@ t_bunny_response	bunny_loop(t_bunny_window *window,
 							   unsigned char frequency,
 							   void *your_data);
 ```
+
+## Exemple ##
+
+*À écrire*
