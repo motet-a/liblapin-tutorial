@@ -74,7 +74,7 @@ Le type `t_bunny_pixelarray` est défini ainsi :
 typedef struct
 {
   t_bunny_clipable	clipable;
-  void				*pixels;
+  void	* const		*pixels;
 }					t_bunny_pixelarray;
 ```
 
