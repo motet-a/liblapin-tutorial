@@ -3,7 +3,7 @@
 
 ## Téléchargement ##
 
-La [version 1.5][liblapin] de la liblapin est disponible sur l’intranet d’Epitech.
+La [version 1.5.1][liblapin] de la liblapin est disponible sur l’intranet d’Epitech.
 
 ## Installation avec fake_install.sh (recommandé) ##
 
@@ -28,4 +28,4 @@ les droits d'écriture.
 
 Mystère...
 
-[liblapin]: https://intra.epitech.eu/e-learning/#!/semester-1/B1-Infographie/cours-LibLapin-&-Documentation/LibLapin1-5
+[liblapin]: https://intra.epitech.eu/e-learning/#!/semester-1/B1-Infographie/cours-LibLapin-&-Documentation/LibLapin1-5-1
