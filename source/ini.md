@@ -60,11 +60,19 @@ else
 bunny_delete_ini(ini);
 ```
 
-Ensuite, nous pouvons accéder aux variables qui nous intéressent avec
-la fonction `bunny_ini_get_field()`.
+## Lire un champ ##
+
+```c
+const char	*bunny_ini_get_field(const t_bunny_ini	*ini,
+								 const char			*scope,
+								 const char			*field,
+								 unsigned int		index);
+```
+
+La fonction `bunny_ini_get_field()` permet de lire un champ.
 Elle prend quatre paramètres :
 
-- le pointeur sur notre `t_bunny_ini`
+  - le pointeur sur notre `t_bunny_ini`
   - le nom de la section
   - le nom du champ
   - l’index de la donnée qui nous intéresse lorsque le champ est
@@ -112,6 +120,6 @@ else
 bunny_delete_ini(ini);
 ```
 
-Voila ! Bon courage pour la suite :)
+Voilà ! Bon courage pour la suite :)
 
 [wikipedia]: https://en.wikipedia.org/wiki/INI_file
