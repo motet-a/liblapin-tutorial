@@ -127,5 +127,5 @@ static void	print_first_name(t_bunny_ini *ini)
 [Voir le fichier][ini.c]
 
 [wikipedia]: https://en.wikipedia.org/wiki/INI_file
-[ini.c]: https://github.com/motet-a/liblapin-tutorial/tree/master/examples/ini/ini.c
-[test.ini]: https://github.com/motet-a/liblapin-tutorial/tree/master/examples/ini/test.ini
+[ini.c]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/ini/ini.c
+[test.ini]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/ini/test.ini
