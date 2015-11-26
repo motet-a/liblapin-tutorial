@@ -140,8 +140,8 @@ Il suffit de l’appeller avec le buffer de la fenêtre et le
 clipable du `t_bunny_pixelarray` :
 
 ```c
-void			blit_to_window(t_bunny_window *window,
-				       const t_bunny_pixelarray *pixelarray)
+void				blit_to_window(t_bunny_window *window,
+				       		const t_bunny_pixelarray *pixelarray)
 {
   t_bunny_position	position;
 
@@ -150,6 +150,8 @@ void			blit_to_window(t_bunny_window *window,
   bunny_blit(&window->buffer, &pixelarray->clipable, &position);
 }
 ```
+
+N'oubliez pas d'appeler ensuite la fonction `bunny_display` pour afficher ce que vous venez de transferer ! 
 
 [Voir le fichier][blit.c]
 
