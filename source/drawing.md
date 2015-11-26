@@ -101,6 +101,8 @@ void		bunny_delete_clipable(t_bunny_clipable	*clipable);
 Cette fonction peut servir à détruire un `t_bunny_pixelarray` dont le clipable
 lui est passé en paramètre.
 
+Il est nécessaire de détruire un `t_bunny_pixelarray` après avoir fini de l'utiliser, pour les mêmes raisons qu'il faut free tout ce que vous avez malloc dans votre programme.
+
 ## Dessiner sur un t_bunny_pixelarray ##
 
 Le membre `pixels` d’un `t_bunny_pixelarray` peut être converti en un
