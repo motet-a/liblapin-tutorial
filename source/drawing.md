@@ -153,9 +153,9 @@ void				blit_to_window(t_bunny_window *window,
 }
 ```
 
-N’oubliez pas d’appeler ensuite la fonction `bunny_display()` pour afficher ce que vous venez de transférer.
-
 [Voir le fichier][blit.c]
+
+N’oubliez pas d’appeler ensuite la fonction `bunny_display()` pour afficher ce que vous venez de transférer.
 
 [format RGBA]: https://en.wikipedia.org/wiki/RGBA_color_space
 [endianness]: https://fr.wikipedia.org/wiki/Endianness
