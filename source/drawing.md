@@ -101,7 +101,7 @@ void		bunny_delete_clipable(t_bunny_clipable	*clipable);
 Cette fonction peut servir à détruire un `t_bunny_pixelarray` dont le clipable
 lui est passé en paramètre.
 
-Il est nécessaire de détruire un `t_bunny_pixelarray` après avoir fini de l'utiliser, pour les mêmes raisons qu'il faut free tout ce que vous avez malloc dans votre programme.
+Il est nécessaire de détruire un `t_bunny_pixelarray` après avoir fini de l’utiliser, pour les mêmes raisons que tout appel à `malloc()` doit correspondre à un appel à `free()`.
 
 ## Dessiner sur un t_bunny_pixelarray ##
 
@@ -115,13 +115,13 @@ Si un `t_bunny_pixelarray` fait 3 pixels de haut sur 4 pixels de large,
 ses 12 pixels seront disposés ainsi :
 
 ```
-<- largeur ->
+◀  largeur  ▶
 
-0   1   2   3   ^
-                |
+0   1   2   3    ▲
+
 4   5   6   7  hauteur
-                |
-8   9  10  11   v
+
+8   9  10  11    ▼
 ```
 
 Ainsi, la case 0 du tableau correspond au pixel en haut
@@ -153,7 +153,7 @@ void				blit_to_window(t_bunny_window *window,
 }
 ```
 
-N'oubliez pas d'appeler ensuite la fonction `bunny_display` pour afficher ce que vous venez de transferer ! 
+N’oubliez pas d’appeler ensuite la fonction `bunny_display()` pour afficher ce que vous venez de transférer.
 
 [Voir le fichier][blit.c]
 
