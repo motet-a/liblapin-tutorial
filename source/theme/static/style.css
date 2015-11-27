@@ -6,29 +6,39 @@ body {
     font-size: 16px;
 }
 
-.documentwrapper, .related, .footer {
-    margin-left: 250px;
+@media screen and (min-width: 900px) {
+    .documentwrapper, .related, .footer {
+	margin-left: 250px;
+    }
 }
 
-.body, .related, .footer {
-    max-width: 800px;
-    padding-left: 2em;
-    padding-right: 2em;
+@media screen and (min-width: 900px) {
+    .body, .related, .footer {
+	max-width: 800px;
+	padding-left: 2em;
+	padding-right: 2em;
+    }
 }
 
 pre,code {
     font-family: 'Droid Sans Mono';
     font-size: 15px;
     background: #eee;
+    overflow-x: auto;
 }
 
 .sphinxsidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 250px;
     background: #fafafa;
+}
+
+@media screen and (min-width: 900px) {
+    .sphinxsidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 250px;
+    }
 }
 
 .sphinxsidebarwrapper {
