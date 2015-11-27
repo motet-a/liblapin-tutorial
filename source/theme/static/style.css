@@ -64,14 +64,14 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #226;
+}
+
 pre.highlight, pre.literal-block {
     background: #fafafa;
     padding: 0.4em;
     padding-left: 2em;
-}
-
-a:hover {
-    color: #66a;
 }
 
 a.reference.external[href^="https://github.com"][href$=".c"] {
@@ -81,6 +81,13 @@ a.reference.external[href^="https://github.com"][href$=".c"] {
     padding-left: 0.4em;
     padding-right: 0.4em;
     border-radius: 0.3em;
+    -webkit-transition: background 0.2s; /* Safari 3.1 to 6.0 */
+    transition: background 0.2s;
+}
+
+a.reference.external[href^="https://github.com"][href$=".c"]:hover {
+    color: #226;
+    background: #fff;
 }
 
 h1 {
