@@ -1,5 +1,116 @@
-@import url("default.css"); /* make sure to sync this with the base theme's css filename */
 
-.strike {
-    text-decoration: line-through;
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700|Droid+Sans+Mono);
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
 }
+
+.documentwrapper, .related, .footer {
+    margin-left: 250px;
+}
+
+.body, .related, .footer {
+    max-width: 800px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+pre,code {
+    font-family: 'Droid Sans Mono';
+    font-size: 15px;
+    background: #eee;
+}
+
+.sphinxsidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background: #fafafa;
+}
+
+.sphinxsidebarwrapper {
+    padding: 1em;
+}
+
+.sphinxsidebar ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.sphinxsidebar ul li.current {
+    padding-left: 1em;
+}
+
+code {
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+}
+
+a {
+    color: #44a;
+    text-decoration: none;
+}
+
+pre.highlight, pre.literal-block {
+    background: #fafafa;
+    padding: 0.4em;
+    padding-left: 2em;
+}
+
+a:hover {
+    color: #66a;
+}
+
+a.reference.external[href^="https://github.com"][href$=".c"] {
+    color: #fff;
+    background: #44a;
+    padding: 0.2em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    border-radius: 0.3em;
+}
+
+h1 {
+}
+
+h2 {
+    border-top: solid 1px #ddd;
+    padding-top: 0.5em;
+    margin-top: 2em;
+}
+
+h3 {
+}
+
+.headerlink {
+    color: #ddd;
+    margin-left: 0.5em;
+}
+
+.headerlink:hover {
+    color: #aaa;
+}
+
+.related ul {
+    list-style: none;
+}
+
+.related ul li {
+    display: inline;
+}
+
+.related h3 {
+    display: none;
+}
+
+.related a[href="genindex.html"] {
+    display: none;
+}
+
+.related ul {
+    text-align: right;
+}
+
