@@ -1,4 +1,5 @@
 build/
+venv/
 examples/window/bunny_start
 examples/window/bunny_start_style
 examples/window/multiple_windows
