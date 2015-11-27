@@ -143,7 +143,7 @@ clipable du `t_bunny_pixelarray` :
 
 ```c
 void				blit_to_window(t_bunny_window *window,
-				       		const t_bunny_pixelarray *pixelarray)
+								   const t_bunny_pixelarray *pixelarray)
 {
   t_bunny_position	position;
 
