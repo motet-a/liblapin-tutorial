@@ -6,9 +6,19 @@ body {
     font-size: 16px;
 }
 
+p {
+    line-height: 140%;
+}
+
 @media screen and (min-width: 900px) {
     .documentwrapper, .related, .footer {
 	margin-left: 250px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .documentwrapper, .related, .footer {
+	margin-left: 360px;
     }
 }
 
@@ -29,6 +39,7 @@ pre,code {
 
 .sphinxsidebar {
     background: #fafafa;
+    overflow-y: auto;
 }
 
 @media screen and (min-width: 900px) {
@@ -41,6 +52,12 @@ pre,code {
     }
 }
 
+@media screen and (min-width: 1400px) {
+    .sphinxsidebar {
+	width: 360px;
+    }
+}
+
 .sphinxsidebarwrapper {
     padding: 1em;
 }
@@ -50,8 +67,22 @@ pre,code {
     list-style: none;
 }
 
-.sphinxsidebar ul li.current {
+.sphinxsidebar li {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.sphinxsidebar ul li.current ul {
     padding-left: 1em;
+    margin-bottom: 0.8em;
+}
+
+.sphinxsidebar ul li.current {
+    margin-top: 0.8em;
+}
+
+.sphinxsidebar a.current {
+    font-weight: bold;
 }
 
 code {
@@ -62,10 +93,15 @@ code {
 a {
     color: #44a;
     text-decoration: none;
+    padding-bottom: 0.0em;
+    border-bottom: solid 1px black;
+    border-color: rgba(0,0,0,0);
+    -webkit-transition: border-color 0.2s; /* Safari 3.1 to 6.0 */
+    transition: border-color 0.2s;
 }
 
 a:hover {
-    color: #226;
+    border-color: #44a;
 }
 
 pre.highlight, pre.literal-block {
@@ -83,6 +119,7 @@ a.reference.external[href^="https://github.com"][href$=".c"] {
     border-radius: 0.3em;
     -webkit-transition: background 0.2s; /* Safari 3.1 to 6.0 */
     transition: background 0.2s;
+    border: none;
 }
 
 a.reference.external[href^="https://github.com"][href$=".c"]:hover {
@@ -91,6 +128,11 @@ a.reference.external[href^="https://github.com"][href$=".c"]:hover {
 }
 
 h1 {
+    font-weight: 300;
+    font-size: 3.2em;
+}
+h1 .headerlink {
+    display: none;
 }
 
 h2 {
@@ -103,12 +145,19 @@ h3 {
 }
 
 .headerlink {
-    color: #ddd;
+    color: rgba(0,0,0,0);
     margin-left: 0.5em;
+    border: none;
+    -webkit-transition: color 0.2s; /* Safari 3.1 to 6.0 */
+    transition: color 0.2s;
 }
 
-.headerlink:hover {
-    color: #aaa;
+h2:hover .headerlink {
+    color: #ddd;
+}
+
+h2 .headerlink:hover {
+    color: #888;
 }
 
 .related ul {
