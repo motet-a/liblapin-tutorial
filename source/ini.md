@@ -52,7 +52,7 @@ Exemple :
 ```c
 t_bunny_ini	*ini;
 
-ini = bunny_load_file("test.ini");
+ini = bunny_load_ini("test.ini");
 if (ini == NULL)
   my_putstr("Fichier introuvable\n");
 else
