@@ -138,6 +138,25 @@ a.reference.external[href^="https://github.com"][href$=".c"]:hover {
     background: #fff;
 }
 
+a.reference.external[href^="https://cdn.local.epitech.eu"] {
+    text-align: right;
+    font-weight: 300;
+    color: #666;
+    background: #fafafa;
+    padding: 0.2em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    border-radius: 0.3em;
+    -webkit-transition: background 0.2s; /* Safari 3.1 to 6.0 */
+    transition: background 0.2s;
+    border: none;
+}
+
+a.reference.external[href^="https://cdn.local.epitech.eu"]:hover {
+    color: #222;
+    background: #fff;
+}
+
 h1 {
     font-weight: 300;
     font-size: 3.2em;

@@ -3,6 +3,8 @@
 
 ## Ouvrir une fenêtre ##
 
+[manuel officiel][o bunny_start]
+
 ```c
 t_bunny_window	*bunny_start(unsigned int	width,
 							 unsigned int	height,
@@ -22,6 +24,8 @@ Seul l’utilisateur peut changer sa taille manuellement.
 
 ## Fermer une fenêtre ##
 
+[manuel officiel][o bunny_stop]
+
 ```c
 void	bunny_stop(t_bunny_window	*window);
 ```
@@ -32,6 +36,8 @@ Après un appel à `bunny_start()`, `bunny_stop()` doit toujours
 allouées par `bunny_start()`.
 
 ## Afficher le contenu d’une fenêtre ##
+
+[manuel officiel][o bunny_display]
 
 ```c
 void	bunny_display(const t_bunny_window	*window);
@@ -65,7 +71,7 @@ int					main()
 
 [Voir le fichier][bunny_start.c]
 
-Cet exemple ouvre une fenêtre nommée « Ma fenêtre » pendant 2 secondes.
+Ce programme ouvre une fenêtre nommée « Ma fenêtre » pendant 2 secondes.
 
 Il est possible d’ouvrir plusieurs fenêtres, comme l’illustre
 [cet exemple][multiple_windows.c].
@@ -119,6 +125,10 @@ static void			print_size(t_bunny_window *window)
 ```
 
 [Voir le fichier][size.c]
+
+[o bunny_start]: https://cdn.local.epitech.eu/elearning/B-MUL-051/doc_lapin.htm#bunny_start
+[o bunny_stop]: https://cdn.local.epitech.eu/elearning/B-MUL-051/doc_lapin.htm#bunny_stop
+[o bunny_display]: https://cdn.local.epitech.eu/elearning/B-MUL-051/doc_lapin.htm#bunny_display
 
 [bunny_start.c]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/window/bunny_start.c
 [bunny_start_style.c]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/window/bunny_start_style.c
