@@ -17,5 +17,6 @@ int			main()
   printf("Loop start\n");
   bunny_loop(window, 2, NULL);
   printf("Loop end\n");
+  bunny_stop(window);
   return (0);
 }

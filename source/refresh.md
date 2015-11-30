@@ -53,7 +53,7 @@ t_bunny_response	    refresh_my_game(void *my_data)
 }
 ```
 
-Nous verrons plus tard qu’il est possible d’utiliser le
+Nous verrons plus bas qu’il est possible d’utiliser le
 pointeur `my_data` pour passer à votre fonction rafraîchissante
 des données concerant l’état de votre application.
 
@@ -88,8 +88,40 @@ donnée à une fréquence donnée (en Hertz).
 `bunny_set_loop_main_function()` doit être appellée avant
 d’appeller `bunny_loop()`.
 
+Le pointeur `your_data` sera passé en paramètre à votre
+fonction rafraîchissante. Vous pouvez l’utiliser pour passer
+des données concernant l’état de l’application à votre
+fonction raffraîchissante.
+
 ## Exemple ##
 
-*À écrire*
+Ce programme crée une fenêtre, affiche `Loop start` un fois,
+puis affiche sans arrêt `There's no game yet` deux fois par seconde.
+
+Lorsque la fenêtre est fermée par l’utilisateur, `Loop end` s’affiche.
+
+```c
+t_bunny_response        refresh_my_game(void *my_data)
+{
+  printf("There's no game yet\n");
+  return (GO_ON);
+}
+
+int						main()
+{
+  t_bunny_window		*window;
+
+  window = bunny_start(800, 600, 0, "My game");
+  bunny_set_loop_main_function(&refresh_my_game);
+  printf("Loop start\n");
+  bunny_loop(window, 2, NULL);
+  printf("Loop end\n");
+  bunny_stop(window);
+  return (0);
+}
+```
+[Voir le fichier][refresh.c]
+
+[refresh.c]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/refresh/refresh.c
 
 [enum]: https://en.wikipedia.org/wiki/Enumerated_type
