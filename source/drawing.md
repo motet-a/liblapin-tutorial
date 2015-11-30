@@ -84,6 +84,8 @@ et le membre `clipable` contient diverses informations dont la taille du
 
 ## Créer un t_bunny_pixelarray ##
 
+[manuel officiel][o new_pixelarray]
+
 ```c
 t_bunny_pixelarray	*bunny_new_pixelarray(unsigned int	width,
 										  unsigned int	height);
@@ -93,6 +95,8 @@ La fonction `bunny_new_pixelarray()` crée un nouveau `t_bunny_pixelarray`
 de taille donnée.
 
 ## Détruire un t_bunny_pixelarray ##
+
+[manuel officiel][o delete_clipable]
 
 ```c
 void		bunny_delete_clipable(t_bunny_clipable	*clipable);
@@ -129,6 +133,8 @@ Ainsi, la case 0 du tableau correspond au pixel en haut
 et ainsi de suite.
 
 ## Transférer un t_bunny_pixelarray vers une fenêtre ##
+
+[manuel officiel][o blit]
 
 ```c
 void	bunny_blit(t_bunny_buffer			*buffer,
@@ -188,6 +194,9 @@ void			fill_blue(t_bunny_pixelarray *pixelarray)
 `t_bunny_pixelarray`, `total` est un entier contenant
 le nombre de pixels du `t_bunny_pixelarray`.
 
+[o blit]: https://cdn.local.epitech.eu/elearning/B-MUL-051/doc_lapin.htm#bunny_blit
+[o new_pixelarray]: https://cdn.local.epitech.eu/elearning/B-MUL-051/doc_lapin.htm#bunny_new_pixelarray
+[o delete_clipable]: https://cdn.local.epitech.eu/elearning/B-MUL-051/doc_lapin.htm#bunny_delete_clipable
 [format RGBA]: https://en.wikipedia.org/wiki/RGBA_color_space
 [endianness]: https://fr.wikipedia.org/wiki/Endianness
 [blit.c]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/drawing/blit.c
