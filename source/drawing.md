@@ -155,8 +155,40 @@ void				blit_to_window(t_bunny_window *window,
 
 [Voir le fichier][blit.c]
 
-N’oubliez pas d’appeler ensuite la fonction `bunny_display()` pour afficher ce que vous venez de transférer.
+N’oubliez pas d’appeler ensuite la fonction `bunny_display()` pour afficher ce que
+vous venez de transférer.
+
+## Exemple : Remplir en bleu ##
+
+Vous en avez marre du rose ? Voici une fonction permettant
+de remplir le `t_bunny_pixelarray` qui lui est passé en
+paramètre en bleu :
+
+```c
+void			fill_blue(t_bunny_pixelarray *pixelarray)
+{
+  int			i;
+  int			total;
+  unsigned		*pixels;
+
+  pixels = (unsigned *)pixelarray->pixels;
+  total = pixelarray->clipable.clip_width * pixelarray->clipable.clip_height;
+  i = 0;
+  while (i < total)
+    {
+      pixels[i] = BLUE;
+      i++;
+    }
+}
+```
+
+[Voir le fichier][fill.c]
+
+`pixels` est un pointeur vers la liste des pixels du
+`t_bunny_pixelarray`, `total` est un entier contenant
+le nombre de pixels du `t_bunny_pixelarray`.
 
 [format RGBA]: https://en.wikipedia.org/wiki/RGBA_color_space
 [endianness]: https://fr.wikipedia.org/wiki/Endianness
 [blit.c]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/drawing/blit.c
+[fill.c]: https://github.com/motet-a/liblapin-tutorial/blob/master/examples/drawing/fill.c
