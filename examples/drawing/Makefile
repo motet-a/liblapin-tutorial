@@ -3,7 +3,7 @@ CC		= cc
 
 RM		= rm -f
 
-NAMES		= blit
+NAMES		= blit fill
 
 CFLAGS		= -Wall
 
@@ -23,6 +23,9 @@ LDFLAGS		= $(LIBLAPIN_PATH) \
 all: $(NAMES)
 
 blit: blit.c
+	$(CC) $^ -o $@ $(CFLAGS) $(LDFLAGS)
+
+fill: fill.c
 	$(CC) $^ -o $@ $(CFLAGS) $(LDFLAGS)
 
 clean:
