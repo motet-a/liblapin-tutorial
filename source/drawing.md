@@ -79,8 +79,22 @@ typedef struct
 ```
 
 Le membre `pixels` contient le tableau de pixels interne,
-et le membre `clipable` contient diverses informations dont la taille du
-`t_bunny_pixelarray`.
+et le membre `clipable` contient diverses informations dont
+la taille du `t_bunny_pixelarray` :
+
+```c
+typedef struct			s_bunny_clipable
+{
+  t_bunny_buffer		buffer;
+  int					clip_width;
+  int					clip_height;
+  /* ... */
+}				t_bunny_clipable;
+```
+
+`clip_width` est la largeur `t_bunny_pixelarray`, `clip_height` est
+sa hauteur. Par exemple, si `a` est un `t_bunny_pixelarray`,
+`a.clipable.clip_width` est sa largeur.
 
 ## Créer un t_bunny_pixelarray ##
 
