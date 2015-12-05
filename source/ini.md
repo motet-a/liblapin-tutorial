@@ -89,8 +89,8 @@ Exemple :
 data=-12,24,36
 ```
 
-Sur ce fichier, `bunny_ini_get_field(ini, "forme1", "data", 0)`,
-retournera sera une chaîne de caractères contenant `"-12"`.
+Sur ce fichier, `bunny_ini_get_field(ini, "forme1", "data", 0)`
+retournera une chaîne de caractères contenant `"-12"`.
 En mettant en dernier paramètre le nombre 1, la chaîne de caractères
 correspondra alors à `"24"`, et `"36"` si le dernier paramètre
 est égal à 2.
